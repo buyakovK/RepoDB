@@ -1,0 +1,38 @@
+/* 
+  Localizable.strings
+  RepoDB
+
+  Created by Groot on 14.09.2020.
+  Copyright © 2020 K. All rights reserved.
+*/
+
+    /* Errors */
+
+"error_code_1" = "Undefined Error";
+"error_code_2" = "Internal Error";
+"error_code_3" = "Permission Denied";
+"error_code_4" = "Operation aborted";
+"error_code_5" = "Database file cannot be written/read due to the simultaneous activity of any other database connection";
+"error_code_6" = "The write operation could not be continued due to a conflict in the same database connection or a conflict with another database connection using the shared cache";
+"error_code_7" = "It was not possible to allocate all the memory needed to complete the operation";
+"error_code_8" = "Attempt to modify some data for which the current database connection does not have write permission";
+"error_code_9" = "Operation aborted";
+"error_code_10" = "The operation could not be completed because the operating system reported an I/O error";
+"error_code_11" = "Database file was corrupted";
+"error_code_12" = "Database object not found";
+"error_code_13" = "Recording cannot be completed because the disc is full";
+"error_code_14" = "Could not open file";
+"error_code_15" = "Problem with SQLite File Lock Protocol";
+"error_code_17" = "Database schema has changed";
+"error_code_18" = "The string or blob was too large";
+"error_code_19" = "Attempted to process SQL statement violating SQL constraint";
+"error_code_20" = "Data Type Mismatch";
+"error_code_21" = "An application uses some SQLite interface in a way that is not defined or not supported";
+"error_code_22" = "No support for large files";
+"error_code_23" = "Authorizer callback indicates prepared SQL statement is not authorized";
+"error_code_24" = "Currently not using SQLite";
+"error_code_25" = "The argument of the parameter number is out of range";
+"error_code_26" = "The file you are opening is not a SQLite database file";
+"error_code_27" = "Unusual and possibly rash operation";
+"error_code_28" = "Unusual and possibly rash operation";
+"error_code_100" = "Another output line is available";
