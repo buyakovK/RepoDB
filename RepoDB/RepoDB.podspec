@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  spec.name         = "SimpleDataBase"
+  spec.name         = "RepoDB"
   spec.version      = "0.0.1"
   spec.summary      = "A framework for working with the SQLite database based on GRDB and RxSwift"
   spec.homepage     = "https://github.com/buyakovK/RepoDB"
