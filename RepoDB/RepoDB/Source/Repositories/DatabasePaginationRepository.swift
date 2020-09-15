@@ -13,7 +13,7 @@ public protocol DatabasePaginationRepository: DatabaseRepository {
     func findAll(page: Int, count: Int) throws -> DatabasePaginationEntity<Entity>
 }
 
-extension DatabasePaginationRepository {
+public extension DatabasePaginationRepository {
     
     func findAll(page: Int, count: Int) throws -> DatabasePaginationEntity<Entity> {
         var result: DatabasePaginationEntity<Entity>?

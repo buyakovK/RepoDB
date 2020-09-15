@@ -14,7 +14,7 @@ public protocol DatabaseEntity: FetchableRecord, MutablePersistableRecord  {
     init()
 }
 
-extension DatabaseEntity {
+public extension DatabaseEntity {
     
     init(row: Row) {
         self.init()
@@ -32,7 +32,7 @@ extension DatabaseEntity {
     }
 }
 
-extension DatabaseEntity {
+public extension DatabaseEntity {
     
     mutating func didInsert(with rowID: Int64, for column: String?) {
         self.id = rowID

@@ -28,7 +28,7 @@ public protocol DatabaseRepository {
     func count() throws -> Int
 }
 
-extension DatabaseRepository {
+public extension DatabaseRepository {
     
     // MARK: - Find
     

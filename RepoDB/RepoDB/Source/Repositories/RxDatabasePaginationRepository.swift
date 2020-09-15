@@ -13,7 +13,7 @@ public protocol RxDatabasePaginationRepository: RxDatabaseRepository, DatabasePa
     func findAll(page: Int, count: Int) -> Single<DatabasePaginationEntity<Entity>>
 }
 
-extension RxDatabasePaginationRepository {
+public extension RxDatabasePaginationRepository {
     func findAll(page: Int, count: Int) -> Single<DatabasePaginationEntity<Entity>> {
         return Single.create { single -> Disposable in
             do {

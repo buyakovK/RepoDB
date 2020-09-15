@@ -26,7 +26,7 @@ public protocol RxDatabaseRepository: DatabaseRepository {
     func count() -> Single<Int>
 }
 
-extension RxDatabaseRepository {
+public extension RxDatabaseRepository {
     
     // MARK: - Find
     
