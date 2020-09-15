@@ -7,6 +7,7 @@
 //
 
 import RxSwift
+import RepoDB
 
 class RxPostsPresenter {
     

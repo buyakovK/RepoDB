@@ -29,11 +29,12 @@
 		6B3998FF250FA690008566F5 /* RxPostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3998E6250FA64A008566F5 /* RxPostsView.swift */; };
 		6B399900250FA690008566F5 /* RxPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3998E5250FA64A008566F5 /* RxPostsViewController.swift */; };
 		6B399901250FA694008566F5 /* PostConvertor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3998DC250FA604008566F5 /* PostConvertor.swift */; };
-		8112C09B6AE4A9CD8E14A420 /* Pods_RepoDB_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFE473E05211BC1AD5E7F476 /* Pods_RepoDB_Demo.framework */; };
+		7974107B379AD6DB4DFE9284 /* Pods_RepoDB_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10031899449D33447946635E /* Pods_RepoDB_Demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		66958B72E7709A2D7F06B254 /* Pods-RepoDB-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepoDB-Demo.debug.xcconfig"; path = "Target Support Files/Pods-RepoDB-Demo/Pods-RepoDB-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		10031899449D33447946635E /* Pods_RepoDB_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RepoDB_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B60FBDF895686FC167B2936 /* Pods-RepoDB-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepoDB-Demo.release.xcconfig"; path = "Target Support Files/Pods-RepoDB-Demo/Pods-RepoDB-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		6B3998BF250FA50B008566F5 /* RepoDB-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RepoDB-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B3998C2250FA50B008566F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B3998C4250FA50B008566F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,8 +59,7 @@
 		6B3998EE250FA674008566F5 /* PostsDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsDataRepository.swift; sourceTree = "<group>"; };
 		6B3998EF250FA678008566F5 /* DatabasePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabasePost.swift; sourceTree = "<group>"; };
 		6B3998F0250FA679008566F5 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		A7EC5F1D3F277C474CAE590B /* Pods-RepoDB-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepoDB-Demo.release.xcconfig"; path = "Target Support Files/Pods-RepoDB-Demo/Pods-RepoDB-Demo.release.xcconfig"; sourceTree = "<group>"; };
-		FFE473E05211BC1AD5E7F476 /* Pods_RepoDB_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RepoDB_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C98ECEBBA476E9EBB1D2F8B /* Pods-RepoDB-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepoDB-Demo.debug.xcconfig"; path = "Target Support Files/Pods-RepoDB-Demo/Pods-RepoDB-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,26 +67,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8112C09B6AE4A9CD8E14A420 /* Pods_RepoDB_Demo.framework in Frameworks */,
+				7974107B379AD6DB4DFE9284 /* Pods_RepoDB_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		389275A9B10B4F86A182DBE9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FFE473E05211BC1AD5E7F476 /* Pods_RepoDB_Demo.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		65BCB6F7253B2B39581A46DC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				66958B72E7709A2D7F06B254 /* Pods-RepoDB-Demo.debug.xcconfig */,
-				A7EC5F1D3F277C474CAE590B /* Pods-RepoDB-Demo.release.xcconfig */,
+				9C98ECEBBA476E9EBB1D2F8B /* Pods-RepoDB-Demo.debug.xcconfig */,
+				2B60FBDF895686FC167B2936 /* Pods-RepoDB-Demo.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -97,7 +89,7 @@
 				6B3998C1250FA50B008566F5 /* RepoDB-Demo */,
 				6B3998C0250FA50B008566F5 /* Products */,
 				65BCB6F7253B2B39581A46DC /* Pods */,
-				389275A9B10B4F86A182DBE9 /* Frameworks */,
+				95133631906C5C91226812B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -182,10 +174,10 @@
 		6B3998DE250FA62E008566F5 /* Posts */ = {
 			isa = PBXGroup;
 			children = (
-				6B3998E3250FA640008566F5 /* PostsInteractor.swift */,
+				6B3998E2250FA63F008566F5 /* PostsViewController.swift */,
 				6B3998E1250FA63F008566F5 /* PostsPresenter.swift */,
 				6B3998E0250FA63F008566F5 /* PostsView.swift */,
-				6B3998E2250FA63F008566F5 /* PostsViewController.swift */,
+				6B3998E3250FA640008566F5 /* PostsInteractor.swift */,
 			);
 			path = Posts;
 			sourceTree = "<group>";
@@ -193,10 +185,10 @@
 		6B3998DF250FA632008566F5 /* RxPosts */ = {
 			isa = PBXGroup;
 			children = (
-				6B3998E7250FA64A008566F5 /* RxPostsInteractor.swift */,
+				6B3998E5250FA64A008566F5 /* RxPostsViewController.swift */,
 				6B3998E4250FA64A008566F5 /* RxPostsPresenter.swift */,
 				6B3998E6250FA64A008566F5 /* RxPostsView.swift */,
-				6B3998E5250FA64A008566F5 /* RxPostsViewController.swift */,
+				6B3998E7250FA64A008566F5 /* RxPostsInteractor.swift */,
 			);
 			path = RxPosts;
 			sourceTree = "<group>";
@@ -219,6 +211,14 @@
 			path = Posts;
 			sourceTree = "<group>";
 		};
+		95133631906C5C91226812B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10031899449D33447946635E /* Pods_RepoDB_Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -226,11 +226,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B3998D3250FA511008566F5 /* Build configuration list for PBXNativeTarget "RepoDB-Demo" */;
 			buildPhases = (
-				F78B15882C41DEF582151C81 /* [CP] Check Pods Manifest.lock */,
+				FE368A4CD831993650F541BA /* [CP] Check Pods Manifest.lock */,
 				6B3998BB250FA50B008566F5 /* Sources */,
 				6B3998BC250FA50B008566F5 /* Frameworks */,
 				6B3998BD250FA50B008566F5 /* Resources */,
-				8646D9FB08C930E4BCA59003 /* [CP] Embed Pods Frameworks */,
+				3BCFE004D161C743CBE15170 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -288,7 +288,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8646D9FB08C930E4BCA59003 /* [CP] Embed Pods Frameworks */ = {
+		3BCFE004D161C743CBE15170 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -305,7 +305,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RepoDB-Demo/Pods-RepoDB-Demo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F78B15882C41DEF582151C81 /* [CP] Check Pods Manifest.lock */ = {
+		FE368A4CD831993650F541BA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -494,7 +494,7 @@
 		};
 		6B3998D4250FA511008566F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 66958B72E7709A2D7F06B254 /* Pods-RepoDB-Demo.debug.xcconfig */;
+			baseConfigurationReference = 9C98ECEBBA476E9EBB1D2F8B /* Pods-RepoDB-Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -513,7 +513,7 @@
 		};
 		6B3998D5250FA511008566F5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7EC5F1D3F277C474CAE590B /* Pods-RepoDB-Demo.release.xcconfig */;
+			baseConfigurationReference = 2B60FBDF895686FC167B2936 /* Pods-RepoDB-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

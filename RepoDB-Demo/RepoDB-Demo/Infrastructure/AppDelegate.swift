@@ -14,6 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        AppDatabase.shared(mirgrationEntitiesTypes: [DatabasePost.self], migrationsName: "v1").setupDatabase(for: application)
         return true
     }
 

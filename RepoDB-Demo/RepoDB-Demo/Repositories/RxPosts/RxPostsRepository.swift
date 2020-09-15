@@ -6,6 +6,6 @@
 //  Copyright © 2020 K. All rights reserved.
 //
 
-import Foundation
+import RepoDB
 
 protocol RxPostsRepository: RxDatabaseRepository where Entity == DatabasePost {}

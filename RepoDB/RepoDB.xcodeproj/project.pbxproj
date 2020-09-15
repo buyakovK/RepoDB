@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DF49B9A373E4AB5720705F6 /* Pods_RepoDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8728E9A37449067637BD749B /* Pods_RepoDB.framework */; };
 		6B399837250F98D2008566F5 /* RepoDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B399835250F98D2008566F5 /* RepoDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6B39983F250F9A68008566F5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B399841250F9A68008566F5 /* Localizable.strings */; };
 		6B39984E250F9B11008566F5 /* ErrorLocalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B39984D250F9B0E008566F5 /* ErrorLocalizer.swift */; };
@@ -62,10 +63,10 @@
 		6B3998B2250F9C35008566F5 /* TableColumnProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3998AE250F9C2C008566F5 /* TableColumnProtocol.swift */; };
 		6B3998B3250F9C35008566F5 /* PrimaryKeyColumnProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3998B0250F9C2C008566F5 /* PrimaryKeyColumnProtocol.swift */; };
 		6B3998B5250F9C3D008566F5 /* AppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3998B4250F9C3B008566F5 /* AppDatabase.swift */; };
-		95E2DEC0D12E756EC15B4971 /* Pods_RepoDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA45B4333DE2FDACC3D8260 /* Pods_RepoDB.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4CB8561143E3A7B7591632CE /* Pods-RepoDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepoDB.debug.xcconfig"; path = "Target Support Files/Pods-RepoDB/Pods-RepoDB.debug.xcconfig"; sourceTree = "<group>"; };
 		6B399832250F98D2008566F5 /* RepoDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RepoDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B399835250F98D2008566F5 /* RepoDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepoDB.h; sourceTree = "<group>"; };
 		6B399836250F98D2008566F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -124,9 +125,8 @@
 		6B3998AF250F9C2C008566F5 /* ColumnTypeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnTypeProtocol.swift; sourceTree = "<group>"; };
 		6B3998B0250F9C2C008566F5 /* PrimaryKeyColumnProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryKeyColumnProtocol.swift; sourceTree = "<group>"; };
 		6B3998B4250F9C3B008566F5 /* AppDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatabase.swift; sourceTree = "<group>"; };
-		B0ECDF4539A4080B6A4C33BA /* Pods-RepoDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepoDB.release.xcconfig"; path = "Target Support Files/Pods-RepoDB/Pods-RepoDB.release.xcconfig"; sourceTree = "<group>"; };
-		C9F546E719BDC81C6588605D /* Pods-RepoDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepoDB.debug.xcconfig"; path = "Target Support Files/Pods-RepoDB/Pods-RepoDB.debug.xcconfig"; sourceTree = "<group>"; };
-		CCA45B4333DE2FDACC3D8260 /* Pods_RepoDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RepoDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8728E9A37449067637BD749B /* Pods_RepoDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RepoDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECAF26F0A4E2CB53CF947DB3 /* Pods-RepoDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepoDB.release.xcconfig"; path = "Target Support Files/Pods-RepoDB/Pods-RepoDB.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95E2DEC0D12E756EC15B4971 /* Pods_RepoDB.framework in Frameworks */,
+				4DF49B9A373E4AB5720705F6 /* Pods_RepoDB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,10 +144,18 @@
 		01AD31EB05C949EB8C718ABF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C9F546E719BDC81C6588605D /* Pods-RepoDB.debug.xcconfig */,
-				B0ECDF4539A4080B6A4C33BA /* Pods-RepoDB.release.xcconfig */,
+				4CB8561143E3A7B7591632CE /* Pods-RepoDB.debug.xcconfig */,
+				ECAF26F0A4E2CB53CF947DB3 /* Pods-RepoDB.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		67BAE34EE90855EAC3BA5914 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8728E9A37449067637BD749B /* Pods_RepoDB.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		6B399828250F98D2008566F5 = {
@@ -156,7 +164,7 @@
 				6B399834250F98D2008566F5 /* RepoDB */,
 				6B399833250F98D2008566F5 /* Products */,
 				01AD31EB05C949EB8C718ABF /* Pods */,
-				FE97F228654E0E94F02E0F57 /* Frameworks */,
+				67BAE34EE90855EAC3BA5914 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -303,14 +311,6 @@
 			path = Errors;
 			sourceTree = "<group>";
 		};
-		FE97F228654E0E94F02E0F57 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CCA45B4333DE2FDACC3D8260 /* Pods_RepoDB.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -329,7 +329,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B39983A250F98D2008566F5 /* Build configuration list for PBXNativeTarget "RepoDB" */;
 			buildPhases = (
-				F40821FE5BB0D6A278A1F5E3 /* [CP] Check Pods Manifest.lock */,
+				27A360D73C9AF90C40C5362D /* [CP] Check Pods Manifest.lock */,
 				6B39982D250F98D2008566F5 /* Headers */,
 				6B39982E250F98D2008566F5 /* Sources */,
 				6B39982F250F98D2008566F5 /* Frameworks */,
@@ -389,7 +389,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		F40821FE5BB0D6A278A1F5E3 /* [CP] Check Pods Manifest.lock */ = {
+		27A360D73C9AF90C40C5362D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -613,7 +613,7 @@
 		};
 		6B39983B250F98D2008566F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9F546E719BDC81C6588605D /* Pods-RepoDB.debug.xcconfig */;
+			baseConfigurationReference = 4CB8561143E3A7B7591632CE /* Pods-RepoDB.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -640,7 +640,7 @@
 		};
 		6B39983C250F98D2008566F5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0ECDF4539A4080B6A4C33BA /* Pods-RepoDB.release.xcconfig */;
+			baseConfigurationReference = ECAF26F0A4E2CB53CF947DB3 /* Pods-RepoDB.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

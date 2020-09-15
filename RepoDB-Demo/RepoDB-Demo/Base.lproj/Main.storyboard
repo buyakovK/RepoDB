@@ -1,24 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZlC-k7-zeL">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--RxRepo-->
+        <scene sceneID="eet-2f-sio">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sHv-Rk-Kwt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="RxRepo" id="e8M-2j-bl6"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="POR-18-4tT">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Uyc-VK-GGS" kind="relationship" relationship="rootViewController" id="rS9-y8-OdU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gmb-Py-MXM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-439" y="860"/>
+        </scene>
+        <!--Repo-->
+        <scene sceneID="4lJ-gc-pJ7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yeG-8e-MpO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Repo" id="yVz-Ry-vxo"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pXz-m8-Ws1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qql-ZG-xUF" kind="relationship" relationship="rootViewController" id="geZ-Fd-Xa2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7yC-3X-UHp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="690" y="860"/>
+        </scene>
+        <!--Posts-->
+        <scene sceneID="35G-Ni-811">
+            <objects>
+                <viewController id="qql-ZG-xUF" customClass="PostsViewController" customModule="RepoDB_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3YY-vD-HFz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gm7-TQ-b2j">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Sgm-Lc-13O" firstAttribute="trailing" secondItem="Gm7-TQ-b2j" secondAttribute="trailing" id="7mo-Nx-rtf"/>
+                            <constraint firstItem="Gm7-TQ-b2j" firstAttribute="leading" secondItem="Sgm-Lc-13O" secondAttribute="leading" id="Ceu-fX-fZN"/>
+                            <constraint firstItem="Gm7-TQ-b2j" firstAttribute="top" secondItem="Sgm-Lc-13O" secondAttribute="top" id="t4V-cc-Eah"/>
+                            <constraint firstItem="Sgm-Lc-13O" firstAttribute="bottom" secondItem="Gm7-TQ-b2j" secondAttribute="bottom" id="weS-jq-bAy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Sgm-Lc-13O"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Posts" id="CN0-IO-Pg3">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3bG-lM-zRk">
+                            <connections>
+                                <action selector="addPostBarButtonTouchUpInside:" destination="qql-ZG-xUF" id="kpd-d4-L7X"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="Gm7-TQ-b2j" id="bgm-ds-YTT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0z9-mb-uDC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="690" y="1586"/>
+        </scene>
+        <!--RxPosts-->
+        <scene sceneID="QZB-QB-CJj">
+            <objects>
+                <viewController id="Uyc-VK-GGS" customClass="RxPostsViewController" customModule="RepoDB_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zaA-fy-M8S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3al-qH-tDH">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3al-qH-tDH" firstAttribute="leading" secondItem="55h-Gw-yRo" secondAttribute="leading" id="J6R-kS-y6l"/>
+                            <constraint firstItem="55h-Gw-yRo" firstAttribute="trailing" secondItem="3al-qH-tDH" secondAttribute="trailing" id="etg-yO-gf1"/>
+                            <constraint firstItem="3al-qH-tDH" firstAttribute="top" secondItem="55h-Gw-yRo" secondAttribute="top" id="re4-ux-zkl"/>
+                            <constraint firstItem="55h-Gw-yRo" firstAttribute="bottom" secondItem="3al-qH-tDH" secondAttribute="bottom" id="sHU-Ih-muf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="55h-Gw-yRo"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="RxPosts" id="EYa-Zm-I6X">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Vyz-PY-2Ba">
+                            <connections>
+                                <action selector="addPostBarButtonTouchUpInside:" destination="Uyc-VK-GGS" id="NQM-yY-J6L"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="3al-qH-tDH" id="jiq-mc-KaG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WdM-md-Ol1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-438" y="1586"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="3On-7s-gab">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ZlC-k7-zeL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kFt-8B-L9n">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="sHv-Rk-Kwt" kind="relationship" relationship="viewControllers" id="Drm-08-43W"/>
+                        <segue destination="yeG-8e-MpO" kind="relationship" relationship="viewControllers" id="TuK-q3-IXt"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j2j-kT-fte" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
         </scene>
     </scenes>
 </document>
