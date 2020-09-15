@@ -24,7 +24,7 @@ public final class AppDatabase {
     
     // MARK: - Public Methods
     
-    static func shared(mirgrationEntitiesTypes types: [DatabaseEntity.Type], migrationsName: String) -> AppDatabase {
+    public static func shared(mirgrationEntitiesTypes types: [DatabaseEntity.Type], migrationsName: String) -> AppDatabase {
         instance.mirgationTypes = types
         var migrator = DatabaseMigrator()
         migrator.registerMigration(migrationsName) { instance.createDatabase(db: $0) }
@@ -32,7 +32,7 @@ public final class AppDatabase {
         return instance
     }
     
-    func setupDatabase(for application: UIApplication, withDataBaseName dbName: String = "db") {
+    public func setupDatabase(for application: UIApplication, withDataBaseName dbName: String = "db") {
         do {
             let databaseURL = try FileManager.default
                 .url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
