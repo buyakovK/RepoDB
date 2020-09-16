@@ -69,7 +69,7 @@ struct DatabasePost: DatabaseEntity {
 
 ### Initializing database and migrations
 
-When starting the application to perform the migration, call the method passing the parameters to it: `mirgrationEntitiesTypes` - an array of database entities, `migrationsName` - the name of the migration
+When starting the application to perform the migration, call the method passing the parameters to it: `mirgrationEntitiesTypes` - фт array of database entity types, `migrationsName` - the name of the migration
 
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
