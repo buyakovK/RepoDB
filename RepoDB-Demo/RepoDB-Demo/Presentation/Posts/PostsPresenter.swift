@@ -34,4 +34,8 @@ class PostsPresenter {
     func savePost(post: Post) {
         view.updateTableView(withPosts: interactor.savePost(post: post))
     }
+    
+    func deletePost(post: Post) {
+        view.updateTableView(withPosts: interactor.deletePost(post: post))
+    }
 }

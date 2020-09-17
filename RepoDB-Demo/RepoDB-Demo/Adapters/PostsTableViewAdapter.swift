@@ -14,6 +14,10 @@ class PostsTableViewAdapter: NSObject {
     
     private var tableView: UITableView
     
+    // MARK: - CallBack
+    
+    var removeItem: ((Post) -> Void)?
+    
     // MARK: - Lifecycle
     
     init(tableView: UITableView) {
@@ -44,5 +48,11 @@ extension PostsTableViewAdapter: UITableViewDelegate, UITableViewDataSource {
         let cell = UITableViewCell()
         cell.textLabel?.text = items[indexPath.row].text
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            removeItem?(items[indexPath.row])
+        }
     }
 }

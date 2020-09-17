@@ -47,6 +47,9 @@ class PostsViewController: UIViewController {
     private func initDependencies() {
         presenter = PostsPresenter(view: self)
         tableViewAdapter = PostsTableViewAdapter(tableView: tableView)
+        tableViewAdapter.removeItem = { [weak self] post in
+            self?.presenter.deletePost(post: post)
+        }
     }
     
     // MARK: - IBAction

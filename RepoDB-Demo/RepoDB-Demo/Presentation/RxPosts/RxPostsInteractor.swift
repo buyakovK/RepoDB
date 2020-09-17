@@ -28,4 +28,9 @@ class RxPostsInteractor {
             .flatMap { _ in self.fetchPosts() }
     }
     
+    func deletePost(post: Post) -> Single<[Post]> {
+        return postRepository.delete(byId: post.id ?? 0)
+            .andThen(self.fetchPosts())
+    }
+    
 }

@@ -31,8 +31,8 @@ class RxPostsPresenter {
             .observeOn(MainScheduler.instance)
             .subscribe(onSuccess: { [weak self] posts in
                 self?.view.updateTableView(withPosts: posts)
-            }, onError: { error in
-                print((error as! RepoDatabaseError).message)
+                }, onError: { error in
+                    print((error as! RepoDatabaseError).message)
             }).disposed(by: disposeBag)
     }
     
@@ -42,6 +42,15 @@ class RxPostsPresenter {
     
     func savePost(post: Post) {
         interactor.savePost(post: post)
+            .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .background))
+            .observeOn(MainScheduler.instance)
+            .subscribe(onSuccess: { [weak self] posts in
+                self?.view.updateTableView(withPosts: posts)
+            }).disposed(by: disposeBag)
+    }
+    
+    func deletePost(post: Post) {
+        interactor.deletePost(post: post)
             .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .background))
             .observeOn(MainScheduler.instance)
             .subscribe(onSuccess: { [weak self] posts in

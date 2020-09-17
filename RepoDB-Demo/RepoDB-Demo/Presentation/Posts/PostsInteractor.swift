@@ -28,4 +28,9 @@ class PostsInteractor {
         return fetchPosts()
     }
     
+    func deletePost(post: Post) -> [Post] {
+        try? postRepository.delete(byId: post.id ?? 0)
+        return fetchPosts()
+    }
+    
 }
