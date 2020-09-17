@@ -1,4 +1,4 @@
-# RepoDB
+![RepoDB](https://github.com/buyakovK/RepoDB/blob/master/RepoDB.png)
 
 RepoDB is a framework for working with the SQLite database based on GRDB and RxSwift
 

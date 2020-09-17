@@ -196,8 +196,8 @@
 		6B3998E9250FA653008566F5 /* RxPosts */ = {
 			isa = PBXGroup;
 			children = (
-				6B3998EC250FA667008566F5 /* RxPostsDataRepository.swift */,
 				6B3998EB250FA666008566F5 /* RxPostsRepository.swift */,
+				6B3998EC250FA667008566F5 /* RxPostsDataRepository.swift */,
 			);
 			path = RxPosts;
 			sourceTree = "<group>";
@@ -205,8 +205,8 @@
 		6B3998EA250FA65A008566F5 /* Posts */ = {
 			isa = PBXGroup;
 			children = (
-				6B3998EE250FA674008566F5 /* PostsDataRepository.swift */,
 				6B3998ED250FA674008566F5 /* PostsRepository.swift */,
+				6B3998EE250FA674008566F5 /* PostsDataRepository.swift */,
 			);
 			path = Posts;
 			sourceTree = "<group>";

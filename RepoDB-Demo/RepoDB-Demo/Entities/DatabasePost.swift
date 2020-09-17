@@ -18,9 +18,6 @@ struct DatabasePost: DatabaseEntity {
     @TableColumn(name: "text", nullable: false)
     var text: String?
     
-//    @TableColumn(name: "author_id", nullable: false)
-//    var authorId: Int64?
-    
     init() { }
     
 }

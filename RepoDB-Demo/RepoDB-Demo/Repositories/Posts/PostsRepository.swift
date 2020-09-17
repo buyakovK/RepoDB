@@ -8,4 +8,4 @@
 
 import RepoDB
 
-protocol PostsRepository: DatabaseRepository where Entity == DatabasePost {}
+protocol PostsRepository: DatabaseRepository where Entity == DatabasePost { }
