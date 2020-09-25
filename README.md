@@ -40,7 +40,7 @@ pod 'RepoDB', '~> 0.0'
 ## Usage
 
 
-An example code sample is provided in this repository in the RepoDB-Demo package.
+Code examples are presented in this repository in packages RepoDB-Demo and RepoDB-Demo-MVC.
 
 ### Initializing database entities (tables)
 

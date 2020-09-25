@@ -29,7 +29,7 @@ class RxPostsInteractor {
     }
     
     func deletePost(post: Post) -> Single<[Post]> {
-        return postRepository.delete(byId: post.id ?? 0)
+        return postRepository.delete(object: postConvertor.convertToDatabasePost(post))
             .andThen(self.fetchPosts())
     }
     

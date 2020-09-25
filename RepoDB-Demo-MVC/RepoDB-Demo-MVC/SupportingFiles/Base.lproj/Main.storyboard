@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ean-PQ-a8q">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--RxPosts-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="RxPostsViewController" customModule="RepoDB_Demo_MVC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="i1X-3F-nC7">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="i1X-3F-nC7" secondAttribute="bottom" id="Hhd-ZY-Zn7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i1X-3F-nC7" secondAttribute="trailing" id="juT-8h-E76"/>
+                            <constraint firstItem="i1X-3F-nC7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="k36-dz-Uhi"/>
+                            <constraint firstItem="i1X-3F-nC7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rPv-tW-fiS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="RxPosts" id="Jfy-OS-ybU">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ts8-0X-JeL">
+                            <connections>
+                                <action selector="addBarButtonTouchUpInside:" destination="BYZ-38-t0r" id="hL0-f7-TqC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="i1X-3F-nC7" id="xdh-6O-m5H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-381" y="1589"/>
+        </scene>
+        <!--RxPosts-->
+        <scene sceneID="Apb-5R-u0S">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2RT-lg-Yuu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="RxPosts" id="gsd-HN-JYu"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NQ1-pk-rGA">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mZU-jl-JIT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LkC-0K-cbC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-380" y="863"/>
+        </scene>
+        <!--Posts-->
+        <scene sceneID="Xkn-ta-uew">
+            <objects>
+                <viewController id="Foc-2d-NGP" customClass="PostsViewController" customModule="RepoDB_Demo_MVC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YLd-xB-gfz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="G18-9F-fva">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="D22-WP-xYk" firstAttribute="bottom" secondItem="G18-9F-fva" secondAttribute="bottom" id="2uz-r8-4t9"/>
+                            <constraint firstItem="G18-9F-fva" firstAttribute="top" secondItem="D22-WP-xYk" secondAttribute="top" id="eAs-xj-fSi"/>
+                            <constraint firstItem="D22-WP-xYk" firstAttribute="trailing" secondItem="G18-9F-fva" secondAttribute="trailing" id="xDU-Ek-V44"/>
+                            <constraint firstItem="G18-9F-fva" firstAttribute="leading" secondItem="D22-WP-xYk" secondAttribute="leading" id="xfT-gJ-L4b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="D22-WP-xYk"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Posts" id="pn6-jh-v5y">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="fFs-vZ-cel">
+                            <connections>
+                                <action selector="addButtonTouchUpInside:" destination="Foc-2d-NGP" id="jZS-2i-pO0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="G18-9F-fva" id="UFD-cs-Xs4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5yc-gR-Vio" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="670" y="1588"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="CGk-a0-0AW">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Ean-PQ-a8q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fBM-Uq-f1F">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="2RT-lg-Yuu" kind="relationship" relationship="viewControllers" id="o2F-Sc-zdG"/>
+                        <segue destination="Pig-km-iaa" kind="relationship" relationship="viewControllers" id="EYM-RT-dnQ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fI8-yy-hZq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--Posts-->
+        <scene sceneID="eZO-YA-jqW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Pig-km-iaa" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Posts" id="hhe-f1-iDe"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TQR-id-d0g">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Foc-2d-NGP" kind="relationship" relationship="rootViewController" id="Rvg-Fx-khC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aYU-yd-buq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="669.56521739130437" y="862.5"/>
+        </scene>
+    </scenes>
+</document>
